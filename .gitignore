@@ -1,0 +1,25 @@
+package tp_batalhanaval;
+
+import java.util.ArrayList;
+
+public class BatalhaNaval {
+
+    public static void main(String[] args) { 
+        //Declaração dos Objetos
+        ArrayList<Posicao> posTirosDados = new ArrayList<Posicao>();
+        TabuleiroBatalhaNaval t = new TabuleiroBatalhaNaval(10, 10);
+        JogadorHumano jh = new JogadorHumano(t, 0, 10, 10);
+        Posicao p = new Posicao(10, 10);
+
+        
+        
+        posTirosDados.add(p);
+       
+        t.iniciarTabuleiro();
+
+        //jh.rebeceberAtaque(p, posTirosDados);
+         jh.escolherEmbarcoes();
+         t.imprimirTabuleiroJogador();
+      
+    }
+}
